@@ -6,18 +6,17 @@
     </linearGradient>
   </defs>
   
-  <!-- Background rectangle -->
-  <rect x="0" y="0" width="200" height="60" rx="8" fill="url(#logoGradient)"/>
+  <!-- Background rectangle removed -->
   
   <!-- Tooth icon -->
-  <path d="M15 20 L15 35 L25 40 L35 35 L35 20 L30 15 L20 15 Z" fill="white"/>
-  <circle cx="25" cy="25" r="2" fill="#1F7A8C"/>
+  <path d="M15 20 L15 35 L25 40 L35 35 L35 20 L30 15 L20 15 Z" fill="#1F7A8C"/>
+  <circle cx="25" cy="25" r="2" fill="white"/>
   
   <!-- Text -->
-  <text x="50" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Dr. Schmidt</text>
-  <text x="50" y="40" font-family="Arial, sans-serif" font-size="10" fill="white">&amp; Kollegen</text>
+  <text x="50" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F7A8C">Dr. Schmidt</text>
+  <text x="50" y="40" font-family="Arial, sans-serif" font-size="10" fill="#1F7A8C">&amp; Kollegen</text>
   
   <!-- Subtitle -->
-  <text x="50" y="52" font-family="Arial, sans-serif" font-size="8" fill="#E1F5F7">Kieferorthopädie</text>
+  <text x="50" y="52" font-family="Arial, sans-serif" font-size="8" fill="#2A9D8F">Zahnmedizin</text>
 </svg>
 
