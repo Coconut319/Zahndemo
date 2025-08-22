@@ -1,0 +1,28 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier"> 
+    <g fill="none" fill-rule="evenodd"> 
+      <!-- Zahnform (Hintergrund) -->
+      <path fill="#E8F4FD" d="M12,28 C13.5,40 17,58 22,58 C26,58 26.5,33 31.5,33 C36.5,33 37,58 41,58 C46,58 49.5,40 51,28 C51,18 46,11 41,11 C37,11 34,14 31.5,14 C29,14 26,11 22,11 C17,11 12,18 12,28 Z"></path>
+      
+      <!-- Beratungs-Symbol (Sprechblase) -->
+      <path fill="#5EA7FF" d="M20,20 L20,20 C20,18 22,16 24,16 L40,16 C42,16 44,18 44,20 L44,28 C44,30 42,32 40,32 L24,32 C22,32 20,30 20,28 Z"></path>
+      <path fill="#5EA7FF" d="M24,32 L28,36 L32,32"></path>
+      
+      <!-- Beratungs-Punkte -->
+      <circle fill="#FFFFFF" cx="26" cy="22" r="1"></circle>
+      <circle fill="#FFFFFF" cx="30" cy="22" r="1"></circle>
+      <circle fill="#FFFFFF" cx="34" cy="22" r="1"></circle>
+      <circle fill="#FFFFFF" cx="38" cy="22" r="1"></circle>
+      
+      <!-- Fragezeichen -->
+      <path stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5" d="M32,26 L32,28"></path>
+      <path stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5" d="M32,30 L32,30"></path>
+      
+      <!-- Glanz-Effekte -->
+      <path stroke="#FFFFFF" stroke-linecap="round" stroke-width="1" d="M20,18 L20,18 C23,18 26,15 26,12"></path>
+      <path stroke="#FFFFFF" stroke-linecap="round" stroke-width="1" d="42,18 L42,18 C39,18 36,15 36,12"></path>
+    </g> 
+  </g>
+</svg>

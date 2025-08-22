@@ -1,0 +1,29 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier"> 
+    <g fill="none" fill-rule="evenodd"> 
+      <!-- Zahnform (Hintergrund) -->
+      <path fill="#E8F4FD" d="M12,28 C13.5,40 17,58 22,58 C26,58 26.5,33 31.5,33 C36.5,33 37,58 41,58 C46,58 49.5,40 51,28 C51,18 46,11 41,11 C37,11 34,14 31.5,14 C29,14 26,11 22,11 C17,11 12,18 12,28 Z"></path>
+      
+      <!-- Lingual Brackets (hinten) -->
+      <rect fill="#8B4513" x="19" y="25" width="3" height="4" rx="0.5"></rect>
+      <rect fill="#8B4513" x="27" y="25" width="3" height="4" rx="0.5"></rect>
+      <rect fill="#8B4513" x="35" y="25" width="3" height="4" rx="0.5"></rect>
+      <rect fill="#8B4513" x="43" y="25" width="3" height="4" rx="0.5"></rect>
+      
+      <!-- Lingual Draht -->
+      <path stroke="#D2691E" stroke-linecap="round" stroke-width="1.5" d="M17,27 L49,27"></path>
+      
+      <!-- Subtile Glanz-Effekte -->
+      <path stroke="#FFFFFF" stroke-linecap="round" stroke-width="1" d="M20,18 L20,18 C23,18 26,15 26,12"></path>
+      <path stroke="#FFFFFF" stroke-linecap="round" stroke-width="1" d="M42,18 L42,18 C39,18 36,15 36,12"></path>
+      
+      <!-- Kleine Details -->
+      <circle fill="#FFFFFF" cx="20" cy="27" r="0.3"></circle>
+      <circle fill="#FFFFFF" cx="28" cy="27" r="0.3"></circle>
+      <circle fill="#FFFFFF" cx="36" cy="27" r="0.3"></circle>
+      <circle fill="#FFFFFF" cx="44" cy="27" r="0.3"></circle>
+    </g> 
+  </g>
+</svg>
