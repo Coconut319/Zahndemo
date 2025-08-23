@@ -630,16 +630,55 @@
         align-items: center;
     }
     
+    /* MOBILE ONLY: Service navigation items - Clean absolute positioning for text */
     .service-nav-item {
         width: 100%;
         max-width: 300px;
-        flex-direction: row;
-        justify-content: flex-start;
-        text-align: left;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        text-align: center !important;
+        position: relative !important;
+        padding-bottom: var(--space-8) !important;
+        min-height: 80px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .service-nav-item .service-nav-icon {
+        position: relative !important;
+        margin: 0 auto var(--space-2) auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 5 !important;
     }
     
     .service-nav-item span {
-        font-size: var(--text-base);
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100% !important;
+        text-align: center !important;
+        font-size: var(--text-base) !important;
+        white-space: nowrap !important;
+        z-index: 10 !important;
+        background: transparent !important;
+        padding: var(--space-2) 0 !important;
+        pointer-events: none !important;
+    }
+    
+    /* Ensure proper spacing and alignment for mobile service nav */
+    .services-nav {
+        gap: var(--space-6);
+        padding: 0 var(--space-4);
+    }
+    
+    .service-nav-item .service-nav-icon img {
+        display: block !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        height: auto !important;
     }
     
     .service-title {
@@ -650,58 +689,102 @@
         font-size: var(--text-base);
     }
     
+    /* MOBILE ONLY: Feature list - Center icons and text */
     .feature-list {
         grid-template-columns: 1fr;
         gap: var(--space-4);
     }
     
     .feature-list li {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column !important;
+        text-align: center !important;
         gap: var(--space-3);
+        align-items: center !important;
+        position: relative !important;
+        padding-bottom: var(--space-6) !important;
+        min-height: 80px !important;
     }
     
     .feature-icon {
-        width: 48px;
-        height: 48px;
-        font-size: var(--text-lg);
+        width: 48px !important;
+        height: 48px !important;
+        font-size: var(--text-lg) !important;
+        margin: 0 auto var(--space-2) auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 5 !important;
+    }
+    
+    .feature-content {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100% !important;
+        text-align: center !important;
+        z-index: 10 !important;
     }
     
     .feature-content h4 {
         font-size: var(--text-base);
         margin-bottom: var(--space-2);
+        text-align: center !important;
     }
     
     .feature-content p {
         font-size: var(--text-sm);
         line-height: var(--leading-relaxed);
+        text-align: center !important;
     }
     
+    /* MOBILE ONLY: Process steps - Center icons and text */
     .process-steps {
         grid-template-columns: 1fr;
         gap: var(--space-4);
     }
     
     .process-step {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column !important;
+        text-align: center !important;
         gap: var(--space-3);
+        align-items: center !important;
+        position: relative !important;
+        padding-bottom: var(--space-6) !important;
+        min-height: 80px !important;
     }
     
     .step-number {
-        width: 40px;
-        height: 40px;
-        font-size: var(--text-lg);
+        width: 40px !important;
+        height: 40px !important;
+        font-size: var(--text-lg) !important;
+        margin: 0 auto var(--space-2) auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 5 !important;
+    }
+    
+    .step-content {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100% !important;
+        text-align: center !important;
+        z-index: 10 !important;
     }
     
     .step-content h4 {
         font-size: var(--text-base);
         margin-bottom: var(--space-2);
+        text-align: center !important;
     }
     
     .step-content p {
         font-size: var(--text-sm);
         line-height: var(--leading-relaxed);
+        text-align: center !important;
     }
     
     .indications-list {
@@ -724,6 +807,19 @@
     
     .faq-answer p {
         padding: 0 var(--space-4) var(--space-4);
+    }
+    
+    /* MOBILE ONLY: Additional service nav overrides to ensure absolute positioning works */
+    .services-nav .service-nav-item {
+        position: relative !important;
+        padding: var(--space-4) var(--space-6) !important;
+        padding-bottom: var(--space-8) !important;
+        background: var(--neutral-50) !important;
+        border: 2px solid transparent !important;
+        border-radius: var(--radius-xl) !important;
+        min-width: 140px !important;
+        min-height: 80px !important;
+        overflow: visible !important;
     }
 }
 
@@ -752,10 +848,57 @@
         font-size: var(--text-base);
     }
     
+    /* MOBILE ONLY: Service cards - Center icons and text */
     .service-card {
         padding: var(--space-4);
+        text-align: center !important;
+        position: relative !important;
+        padding-top: 100px !important;
+        padding-bottom: var(--space-4) !important;
+        min-height: 200px !important;
     }
     
+    .service-icon {
+        position: absolute !important;
+        top: 30px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin: 0 !important;
+        width: 80px !important;
+        height: 80px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: var(--secondary-color) !important;
+        border-radius: var(--radius-full) !important;
+        font-size: var(--text-3xl) !important;
+        z-index: 10 !important;
+    }
+    
+    /* MOBILE ONLY: Practice features - Center icons and text */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .feature-item {
+        text-align: center !important;
+        padding: var(--space-4);
+        position: relative !important;
+        padding-bottom: var(--space-6) !important;
+        min-height: 80px !important;
+    }
+    
+    .feature-icon {
+        position: absolute !important;
+        top: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        margin: 0 auto var(--space-3) auto !important;
+        z-index: 5 !important;
+    }
+    
+    /* MOBILE ONLY: Additional centering rules for leistungen.html page */
     .process-step {
         padding: var(--space-4);
     }
@@ -772,6 +915,40 @@
     .info-label,
     .info-value {
         font-size: var(--text-xs);
+    }
+    
+    /* Force center alignment for all text elements on mobile */
+    .about-feature,
+    .process-step,
+    .feature-item,
+    .service-nav-item {
+        text-align: center !important;
+    }
+    
+    .about-feature .feature-content,
+    .process-step .step-content,
+    .feature-item .feature-content,
+    .service-nav-item span {
+        text-align: center !important;
+    }
+    
+    /* Ensure all headings are centered on mobile */
+    .about-feature h4,
+    .process-step h4,
+    .feature-item h4,
+    .service-nav-item span {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    /* Ensure all paragraphs are centered on mobile */
+    .about-feature p,
+    .process-step p,
+    .feature-item p {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
 
@@ -1576,6 +1753,16 @@
         flex-direction: column;
         text-align: center;
         gap: var(--space-2);
+    }
+    
+    /* Mobile styles for cases features */
+    .intro-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+    
+    .intro-stats .stat {
+        text-align: center;
     }
 }
 
