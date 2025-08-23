@@ -1500,51 +1500,21 @@ button {
         margin: 0 auto var(--space-6) auto;
     }
     
-    /* MOBILE ONLY: Homepage service icons - Absolute positioning for perfect centering */
+    /* MOBILE ONLY: Simple centering for homepage service icons */
     .services-preview .service-card {
-        position: relative !important;
-        padding-top: 100px !important;
-        padding-bottom: var(--space-6) !important;
-        min-height: 200px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
+        text-align: center;
     }
     
     .services-preview .service-card .service-icon {
-        position: absolute !important;
-        top: 30px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        margin: 0 !important;
-        width: auto !important;
-        height: auto !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        z-index: 10 !important;
+        margin: 0 auto var(--space-6) auto;
     }
     
     .services-preview .service-card .service-icon img,
     .services-preview .service-card .service-icon svg {
-        width: 60px !important;
-        height: 60px !important;
-        margin: 0 !important;
-        display: block !important;
-    }
-    
-    /* Ensure service cards are properly positioned for absolute icon centering */
-    .services-preview .services-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: var(--space-8);
-    }
-    
-    /* Force center alignment for all service card content on mobile */
-    .services-preview .service-card * {
-        text-align: center;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        display: block;
     }
     
     /* Center all text elements within service cards */
@@ -1552,9 +1522,9 @@ button {
     .services-preview .service-card p,
     .services-preview .service-card ul,
     .services-preview .service-card .btn {
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .about-features {
