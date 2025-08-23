@@ -1,6 +1,6 @@
 /**
  * 3D Scene for Hero Section
- * Creates an interactive 3D dental/orthodontics scene using Three.js
+ * Creates an interactive 3D dental scene using Three.js
  */
 
 class Hero3DScene {
@@ -93,8 +93,7 @@ class Hero3DScene {
 
     createObjects() {
         this.createTeeth();
-        this.createAligners();
-        this.createBrackets();
+        this.createDentalTools();
         this.createParticles();
         this.createFloatingElements();
     }

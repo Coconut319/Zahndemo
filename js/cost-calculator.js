@@ -1,29 +1,29 @@
 /**
  * Cost Calculator
- * Handles the interactive cost calculation for orthodontic treatments
+ * Handles the interactive cost calculation for dental treatments
  */
 class CostCalculator {
     constructor() {
         this.pricingData = {
-            invisalign: {
-                short: { simple: 3500, medium: 4500, complex: 5500 },
-                medium: { simple: 4000, medium: 5000, complex: 6000 },
-                long: { simple: 4500, medium: 5500, complex: 6500 }
+            prophylaxe: {
+                short: { simple: 80, medium: 120, complex: 160 },
+                medium: { simple: 100, medium: 150, complex: 200 },
+                long: { simple: 120, medium: 180, complex: 240 }
             },
-            'feste-spange': {
-                short: { simple: 2800, medium: 3500, complex: 4200 },
-                medium: { simple: 3200, medium: 4000, complex: 4800 },
-                long: { simple: 3600, medium: 4500, complex: 5500 }
+            'fuellungen': {
+                short: { simple: 150, medium: 250, complex: 350 },
+                medium: { simple: 200, medium: 300, complex: 400 },
+                long: { simple: 250, medium: 350, complex: 500 }
             },
-            lingual: {
-                short: { simple: 6500, medium: 7500, complex: 8500 },
-                medium: { simple: 7000, medium: 8000, complex: 9000 },
-                long: { simple: 7500, medium: 8500, complex: 9500 }
+            wurzelbehandlung: {
+                short: { simple: 300, medium: 450, complex: 600 },
+                medium: { simple: 400, medium: 550, complex: 700 },
+                long: { simple: 500, medium: 650, complex: 800 }
             },
-            fruehbehandlung: {
-                short: { simple: 1800, medium: 2200, complex: 2600 },
-                medium: { simple: 2200, medium: 2600, complex: 3000 },
-                long: { simple: 2600, medium: 3000, complex: 3500 }
+            kinderzahnheilkunde: {
+                short: { simple: 60, medium: 90, complex: 120 },
+                medium: { simple: 80, medium: 120, complex: 160 },
+                long: { simple: 100, medium: 150, complex: 200 }
             }
         };
         

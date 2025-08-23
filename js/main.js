@@ -1,11 +1,11 @@
 /**
- * Main JavaScript for Dr. Schmidt & Kollegen Kieferorthopädie Website
+ * Main JavaScript for Dr. Schmidt & Kollegen Zahnmedizin Website
  * Handles navigation, scroll effects, mobile menu, and general interactions
  */
 
-class OrthodonticsWebsite {
+class DentalWebsite {
     constructor() {
-        console.log('OrthodonticsWebsite constructor called');
+        console.log('DentalWebsite constructor called');
         this.header = document.getElementById('header');
         this.mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
         this.nav = document.querySelector('.nav');
