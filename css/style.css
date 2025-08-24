@@ -1483,62 +1483,6 @@ button {
     .hero-features {
         flex-direction: column;
         gap: var(--space-4);
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    .hero-feature {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: var(--space-3);
-        text-align: center;
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    .hero-feature .feature-icon {
-        font-size: 3em;
-        margin-bottom: var(--space-3);
-        display: block;
-        text-align: center;
-    }
-    
-    .hero-feature span:not(.feature-icon) {
-        font-size: var(--text-base);
-        font-weight: var(--font-medium);
-        color: var(--neutral-100);
-        text-align: center;
-        display: block;
-        width: 100%;
-    }
-    
-    /* Hide scroll indicator on mobile to prevent overlapping */
-    .hero-scroll-indicator {
-        display: none;
-    }
-    
-    /* Center section titles on mobile */
-    .section-title {
-        text-align: center;
-    }
-    
-    /* Center service features list on mobile */
-    .service-features {
-        text-align: center !important;
-        margin-bottom: var(--space-6);
-    }
-    
-    .service-features li {
-        display: block !important;
-        text-align: center !important;
-        margin-bottom: var(--space-2) !important;
-        list-style: none !important;
-        padding: 0 !important;
-        gap: 0 !important;
-        align-items: center !important;
     }
     
     .services-grid {
@@ -1556,15 +1500,41 @@ button {
         align-items: center;
     }
     
-    /* Homepage about-features specific styling */
-    .homepage .about-feature {
+    /* Fix about-features icons to appear above text on mobile */
+    .about-feature {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: var(--space-3);
+        text-align: center;
+    }
+    
+    .about-feature .feature-icon {
+        font-size: var(--text-3xl);
+        margin-bottom: var(--space-2);
+    }
+    
+    .about-feature .feature-content {
+        text-align: center;
+    }
+    
+    .about-feature .feature-content h4 {
+        text-align: center;
+        margin-bottom: var(--space-2);
+    }
+    
+    .about-feature .feature-content p {
+        text-align: center;
+    }
+    
+    /* Homepage about-features specific styling */
+    .homepage .about-feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         gap: var(--space-4);
         width: 100%;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-start;
     }
     
     .homepage .about-feature .feature-icon {
@@ -1578,12 +1548,11 @@ button {
         border-radius: var(--radius-lg);
         box-shadow: var(--shadow-sm);
         font-size: var(--text-2xl);
-        margin-bottom: var(--space-2);
     }
     
     .homepage .about-feature .feature-content {
         flex: 1;
-        text-align: center;
+        text-align: left;
     }
     
     /* General about-features (for other pages like leistungen.html) */
