@@ -1559,11 +1559,12 @@ button {
     /* Homepage about-features specific styling */
     .homepage .about-feature {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         gap: var(--space-4);
         width: 100%;
-        justify-content: flex-start;
+        justify-content: center;
+        text-align: center;
     }
     
     .homepage .about-feature .feature-icon {
@@ -1577,11 +1578,12 @@ button {
         border-radius: var(--radius-lg);
         box-shadow: var(--shadow-sm);
         font-size: var(--text-2xl);
+        margin-bottom: var(--space-2);
     }
     
     .homepage .about-feature .feature-content {
         flex: 1;
-        text-align: left;
+        text-align: center;
     }
     
     /* General about-features (for other pages like leistungen.html) */
