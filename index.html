@@ -114,18 +114,33 @@
             /* Center the entire header content on mobile */
             .header .header-content {
                 justify-content: center !important;
+                align-items: center !important;
                 gap: 0 !important;
+                padding: 0 !important;
+                position: relative !important;
             }
             
             /* Center the logo container on mobile */
             .header .logo {
                 justify-content: center !important;
+                align-items: center !important;
                 flex: 1 !important;
+                margin: 0 !important;
+                padding: 0 !important;
             }
             
             /* Hide navigation on mobile for better centering */
             .header .nav {
                 display: none !important;
+            }
+            
+            /* Position mobile menu button on the right side */
+            .header .mobile-menu-toggle {
+                position: absolute !important;
+                right: 20px !important;
+                top: 50% !important;
+                transform: translateY(-50%) !important;
+                z-index: 1000 !important;
             }
             
             /* Hero section feature icons centering */
