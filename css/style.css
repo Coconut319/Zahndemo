@@ -1500,31 +1500,78 @@ button {
         margin: 0 auto var(--space-6) auto;
     }
     
-    /* MOBILE ONLY: Simple centering for homepage service icons */
+    /* MOBILE ONLY: Absolute positioning for homepage service icons and text */
     .services-preview .service-card {
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: var(--space-6);
+        min-height: 280px;
         text-align: center;
     }
     
     .services-preview .service-card .service-icon {
-        margin: 0 auto var(--space-6) auto;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--secondary-color);
+        border-radius: var(--radius-full);
+        z-index: 10;
     }
     
     .services-preview .service-card .service-icon img,
     .services-preview .service-card .service-icon svg {
-        width: 60px;
-        height: 60px;
-        margin: 0 auto;
+        width: 50px;
+        height: 50px;
         display: block;
     }
     
-    /* Center all text elements within service cards */
-    .services-preview .service-card h3,
-    .services-preview .service-card p,
-    .services-preview .service-card ul,
-    .services-preview .service-card .btn {
+    /* Position text elements below the icon */
+    .services-preview .service-card .service-title {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
+        padding: 0 var(--space-4);
+    }
+    
+    .services-preview .service-card .service-description {
+        position: absolute;
+        top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0 var(--space-4);
+    }
+    
+    .services-preview .service-card .service-features {
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0 var(--space-4);
+        list-style: none;
+    }
+    
+    .services-preview .service-card .btn {
+        position: absolute;
+        bottom: var(--space-4);
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
     }
     
     .about-features {
