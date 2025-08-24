@@ -28,6 +28,39 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
     
+    <!-- Mobile Contact Section Fix -->
+    <style>
+        @media (max-width: 768px) {
+            .info-card {
+                padding: var(--space-6) !important;
+                text-align: left !important;
+                display: flex !important;
+                align-items: center !important;
+                gap: var(--space-4) !important;
+            }
+            
+            .info-icon {
+                flex-shrink: 0 !important;
+                width: 60px !important;
+                height: 60px !important;
+                margin: 0 !important;
+                background: var(--secondary-color) !important;
+                border-radius: var(--radius-full) !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                color: var(--primary-color) !important;
+            }
+            
+            .info-card h3,
+            .info-card p,
+            .info-card .btn {
+                text-align: left !important;
+                margin-left: 0 !important;
+            }
+        }
+    </style>
+    
     <!-- OpenStreetMap CSS -->
 
     
