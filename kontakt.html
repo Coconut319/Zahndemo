@@ -28,56 +28,6 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
     
-    <!-- Force Contact Section Layout -->
-    <style>
-        /* Override ALL possible conflicting styles */
-        .info-card,
-        .contact-info-section .info-card,
-        .info-grid .info-card {
-            display: flex !important;
-            flex-direction: row !important;
-            align-items: flex-start !important;
-            gap: 20px !important;
-            padding: 20px !important;
-            text-align: left !important;
-            background: white !important;
-            border: 5px solid green !important;
-        }
-        
-        .info-icon,
-        .contact-info-section .info-icon,
-        .info-grid .info-icon {
-            flex-shrink: 0 !important;
-            width: 60px !important;
-            height: 60px !important;
-            margin: 0 !important;
-            background: #00f4cb !important;
-            border-radius: 50% !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            color: white !important;
-            border: 5px solid yellow !important;
-        }
-        
-        .info-card h3,
-        .info-card p,
-        .info-card .btn,
-        .contact-info-section .info-card h3,
-        .contact-info-section .info-card p,
-        .contact-info-section .info-card .btn {
-            text-align: left !important;
-            margin-left: 0 !important;
-            margin-top: 15px !important;
-        }
-        
-        /* Force override for any remaining conflicts */
-        .info-card *,
-        .contact-info-section .info-card * {
-            text-align: left !important;
-        }
-    </style>
-    
     <!-- OpenStreetMap CSS -->
 
     
@@ -114,8 +64,88 @@
         ]
     }
     </script>
+    
 </head>
 <body>
+    <!-- CONTACT SECTION FIX - Mobile Only -->
+    <style>
+        @media (max-width: 768px) {
+            /* Target contact section specifically */
+            .contact-info-section .info-card,
+            .info-grid .info-card,
+            .info-card {
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                gap: 20px !important;
+                text-align: left !important;
+                padding: 20px !important;
+                background: white !important;
+                border: 3px solid green !important;
+            }
+            
+            .contact-info-section .info-icon,
+            .info-grid .info-icon,
+            .info-icon {
+                flex-shrink: 0 !important;
+                width: 60px !important;
+                height: 60px !important;
+                margin: 0 !important;
+                background: #00f4cb !important;
+                border-radius: 50% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                color: white !important;
+                border: 3px solid blue !important;
+            }
+            
+            .contact-info-section .info-card h3,
+            .contact-info-section .info-card p,
+            .contact-info-section .info-card .btn,
+            .info-grid .info-card h3,
+            .info-grid .info-card p,
+            .info-grid .info-card .btn,
+            .info-card h3,
+            .info-card p,
+            .info-card .btn {
+                margin: 0 !important;
+                text-align: left !important;
+                flex: 1 !important;
+            }
+            
+            /* Fix footer contact section icons on mobile - Use absolute positioning */
+            .footer .footer-section .footer-contact .contact-item {
+                position: relative !important;
+                min-height: 40px !important;
+                padding-left: 50px !important;
+                margin-bottom: 20px !important;
+            }
+            
+            .footer .footer-section .footer-contact .contact-icon {
+                position: absolute !important;
+                left: 0 !important;
+                top: 50% !important;
+                transform: translateY(-50%) !important;
+                font-size: 20px !important;
+                width: 30px !important;
+                text-align: center !important;
+                color: var(--primary-color) !important;
+            }
+            
+            .footer .footer-section .footer-contact .contact-item div {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            
+            .footer .footer-section .footer-contact .contact-item p {
+                margin: 0 !important;
+                text-align: left !important;
+                line-height: 1.4 !important;
+            }
+        }
+    </style>
+    
     <!-- Skip Link for Accessibility -->
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     
@@ -491,6 +521,31 @@
                         <p><strong>Samstag - Sonntag:</strong><br>Geschlossen</p>
                     </div>
                 </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item" style="position: relative; min-height: 40px; padding-left: 50px; margin-bottom: 20px;">
+                            <span class="contact-icon" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 20px; width: 30px; text-align: center; color: #00f4cb;">📍</span>
+                            <div style="margin: 0; padding: 0;">
+                                <p style="margin: 0; text-align: left; line-height: 1.4;">Maximilianstraße 123</p>
+                                <p style="margin: 0; text-align: left; line-height: 1.4;">80539 München</p>
+                            </div>
+                        </div>
+                        <div class="contact-item" style="position: relative; min-height: 40px; padding-left: 50px; margin-bottom: 20px;">
+                            <span class="contact-icon" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 20px; width: 30px; text-align: center; color: #00f4cb;">📞</span>
+                            <div style="margin: 0; padding: 0;">
+                                <p style="margin: 0; text-align: left; line-height: 1.4;"><a href="tel:+498912345678">+49 89 123 456 78</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item" style="position: relative; min-height: 40px; padding-left: 50px; margin-bottom: 20px;">
+                            <span class="contact-icon" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 20px; width: 30px; text-align: center; color: #00f4cb;">✉️</span>
+                            <div style="margin: 0; padding: 0;">
+                                <p style="margin: 0; text-align: left; line-height: 1.4;"><a href="mailto:info@zahnarztpraxis-muenchen.de">info@zahnarztpraxis-muenchen.de</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="footer-bottom">
@@ -507,7 +562,6 @@
     </footer>
     
     <!-- Scripts -->
-    <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/contact.js"></script>
 <!-- Simple mobile menu fallback -->
