@@ -83,6 +83,129 @@
     </script>
 </head>
 <body>
+    <!-- Mobile-specific styles -->
+    <style>
+        /* Mobile-specific fixes */
+        @media (max-width: 768px) {
+            /* Header logo text bigger on mobile */
+            .header .logo-text {
+                font-size: 1.5rem !important;
+                font-weight: 600 !important;
+                text-align: center !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                line-height: 1.2 !important;
+            }
+            
+            /* Mobile logo text structure */
+            .header .logo-text {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                line-height: 1.2 !important;
+            }
+            
+            /* Force line break for mobile */
+            .header .logo-text br {
+                display: block !important;
+            }
+            
+            /* Center the entire header content on mobile */
+            .header .header-content {
+                justify-content: center !important;
+                gap: 0 !important;
+            }
+            
+            /* Center the logo container on mobile */
+            .header .logo {
+                justify-content: center !important;
+                flex: 1 !important;
+            }
+            
+            /* Hide navigation on mobile for better centering */
+            .header .nav {
+                display: none !important;
+            }
+            
+            /* Hero section feature icons centering */
+            .hero-features {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+            
+            .hero-feature {
+                text-align: center;
+                flex: 1;
+                max-width: 120px;
+            }
+            
+            .hero-feature-icon {
+                width: 60px;
+                height: 60px;
+                margin: 0 auto 1rem;
+                background: var(--primary-color);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.5rem;
+            }
+            
+            /* Remove scroll text and arrow from mobile hero */
+            .hero-scroll {
+                display: none;
+            }
+            
+            /* Center "Unsere Leistungen" headline */
+            .services-section h2 {
+                text-align: center;
+            }
+            
+            /* Center bullet points in service cards */
+            .service-card ul {
+                text-align: center;
+                list-style-position: inside;
+            }
+            
+            /* Fix "Warum Dr. Schmidt & Kollegen?" section icons */
+            .why-section .feature-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .why-section .feature-item {
+                text-align: center;
+            }
+            
+            .why-section .feature-icon {
+                margin: 0 auto 1rem;
+                display: block;
+            }
+            
+            /* Fix contact section icons */
+            .contact-section .contact-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .contact-section .contact-item {
+                text-align: center;
+            }
+            
+            .contact-section .contact-icon {
+                margin: 0 auto 1rem;
+                display: block;
+            }
+        }
+    </style>
+    
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     
@@ -95,7 +218,7 @@
                 <!-- Logo -->
                 <div class="logo">
                     <a href="index.html" aria-label="Zur Startseite">
-                        <span class="logo-text">Dr. Schmidt & Kollegen</span>
+                        <span class="logo-text">Dr. Schmidt<br>& Kollegen</span>
                     </a>
                 </div>
 
