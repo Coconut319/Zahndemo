@@ -1526,25 +1526,19 @@ button {
     }
     
     /* Center service features list on mobile */
-    .service-card {
-        position: relative;
-        padding-bottom: 80px;
-    }
-    
     .service-features {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        padding-left: 0;
-        width: 100%;
-        list-style: none;
+        text-align: center !important;
+        margin-bottom: var(--space-6);
     }
     
     .service-features li {
-        text-align: center;
-        margin-bottom: var(--space-2);
+        display: block !important;
+        text-align: center !important;
+        margin-bottom: var(--space-2) !important;
+        list-style: none !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        align-items: center !important;
     }
     
     .services-grid {
