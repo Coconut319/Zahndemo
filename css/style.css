@@ -1500,10 +1500,17 @@ button {
     }
     
     .hero-feature .feature-icon {
-        font-size: 3em;
+        font-size: 2.5em;
         margin-bottom: var(--space-3);
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background: var(--white);
+        border-radius: 50%;
         text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     
     .hero-feature span:not(.feature-icon) {
