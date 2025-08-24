@@ -1542,19 +1542,19 @@ button {
         align-items: center;
     }
     
-    /* Fix about-features icons to appear above text on mobile */
+    /* Fix about-features icons to appear above text on mobile using absolute positioning */
     .homepage .about-feature {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: var(--space-3);
-        text-align: center;
-        width: 100%;
+        position: relative;
+        min-height: 120px;
+        margin-bottom: var(--space-6);
     }
     
     .homepage .about-feature .feature-icon {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: var(--text-3xl);
-        margin-bottom: var(--space-2);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1563,11 +1563,17 @@ button {
         background: var(--secondary-color);
         border-radius: var(--radius-lg);
         color: var(--white);
+        z-index: 10;
     }
     
     .homepage .about-feature .feature-content {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
         text-align: center;
         width: 100%;
+        padding: 0 var(--space-4);
     }
     
     .homepage .about-feature .feature-content h4 {
@@ -1861,79 +1867,7 @@ button {
         align-items: center;
     }
     
-    /* Homepage specific on very small screens */
-    .homepage .about-feature {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: var(--space-3);
-        width: 100%;
-        justify-content: flex-start;
-        margin-bottom: var(--space-2);
-    }
-    
-    .homepage .about-feature .feature-icon {
-        flex-shrink: 0;
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--secondary-color);
-        border-radius: var(--radius-lg);
-        box-shadow: var(--shadow-sm);
-        font-size: var(--text-xl);
-    }
-    
-    .homepage .about-feature .feature-content {
-        flex: 1;
-        text-align: left;
-    }
-    
-    .homepage .about-feature .feature-content h4 {
-        font-size: var(--text-base);
-        margin-bottom: var(--space-1);
-    }
-    
-    .homepage .about-feature .feature-content p {
-        font-size: var(--text-sm);
-        line-height: 1.4;
-    }
-    
-    /* General about-features on very small screens (for other pages) */
-    .about-feature {
-        display: flex;
-        gap: var(--space-3);
-        align-items: flex-start;
-        margin-bottom: var(--space-2);
-    }
-    
-    .about-feature .feature-icon {
-        flex-shrink: 0;
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--secondary-color);
-        border-radius: var(--radius-lg);
-        box-shadow: var(--shadow-sm);
-        font-size: var(--text-xl);
-    }
-    
-    .about-feature .feature-content {
-        flex: 1;
-    }
-    
-    .about-feature .feature-content h4 {
-        font-size: var(--text-base);
-        margin-bottom: var(--space-1);
-    }
-    
-    .about-feature .feature-content p {
-        font-size: var(--text-sm);
-        line-height: 1.4;
-    }
+
 }
 
 /* ===== PRINT STYLES ===== */
