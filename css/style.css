@@ -1543,30 +1543,42 @@ button {
     }
     
     /* Fix about-features icons to appear above text on mobile */
-    .about-feature {
+    .homepage .about-feature {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: var(--space-3);
         text-align: center;
+        width: 100%;
     }
     
-    .about-feature .feature-icon {
+    .homepage .about-feature .feature-icon {
         font-size: var(--text-3xl);
         margin-bottom: var(--space-2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background: var(--secondary-color);
+        border-radius: var(--radius-lg);
+        color: var(--white);
     }
     
-    .about-feature .feature-content {
+    .homepage .about-feature .feature-content {
         text-align: center;
+        width: 100%;
     }
     
-    .about-feature .feature-content h4 {
+    .homepage .about-feature .feature-content h4 {
         text-align: center;
         margin-bottom: var(--space-2);
+        width: 100%;
     }
     
-    .about-feature .feature-content p {
+    .homepage .about-feature .feature-content p {
         text-align: center;
+        width: 100%;
     }
     
     /* Center section titles on mobile */
