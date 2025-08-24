@@ -28,36 +28,53 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
     
-    <!-- Mobile Contact Section Fix -->
+    <!-- Force Contact Section Layout -->
     <style>
-        @media (max-width: 768px) {
-            .info-card {
-                padding: var(--space-6) !important;
-                text-align: left !important;
-                display: flex !important;
-                align-items: center !important;
-                gap: var(--space-4) !important;
-            }
-            
-            .info-icon {
-                flex-shrink: 0 !important;
-                width: 60px !important;
-                height: 60px !important;
-                margin: 0 !important;
-                background: var(--secondary-color) !important;
-                border-radius: var(--radius-full) !important;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                color: var(--primary-color) !important;
-            }
-            
-            .info-card h3,
-            .info-card p,
-            .info-card .btn {
-                text-align: left !important;
-                margin-left: 0 !important;
-            }
+        /* Override ALL possible conflicting styles */
+        .info-card,
+        .contact-info-section .info-card,
+        .info-grid .info-card {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: flex-start !important;
+            gap: 20px !important;
+            padding: 20px !important;
+            text-align: left !important;
+            background: white !important;
+            border: 5px solid green !important;
+        }
+        
+        .info-icon,
+        .contact-info-section .info-icon,
+        .info-grid .info-icon {
+            flex-shrink: 0 !important;
+            width: 60px !important;
+            height: 60px !important;
+            margin: 0 !important;
+            background: #00f4cb !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            color: white !important;
+            border: 5px solid yellow !important;
+        }
+        
+        .info-card h3,
+        .info-card p,
+        .info-card .btn,
+        .contact-info-section .info-card h3,
+        .contact-info-section .info-card p,
+        .contact-info-section .info-card .btn {
+            text-align: left !important;
+            margin-left: 0 !important;
+            margin-top: 15px !important;
+        }
+        
+        /* Force override for any remaining conflicts */
+        .info-card *,
+        .contact-info-section .info-card * {
+            text-align: left !important;
         }
     </style>
     
@@ -463,30 +480,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-title">Kontakt</h4>
-                    <div class="footer-contact">
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <div>
-                                <p>Maximilianstraße 123</p>
-                                <p>80539 München</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">📞</span>
-                            <div>
-                                <p><a href="tel:+498912345678">+49 89 123 456 78</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">✉️</span>
-                            <div>
-                                <p><a href="mailto:info@zahnarztpraxis-muenchen.de">info@zahnarztpraxis-muenchen.de</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <div class="footer-section">
                     <h4 class="footer-title">Öffnungszeiten</h4>

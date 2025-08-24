@@ -4082,33 +4082,7 @@
         grid-template-columns: 1fr;
     }
     
-    .info-card {
-        padding: var(--space-6) !important;
-        text-align: left !important;
-        display: flex !important;
-        align-items: center !important;
-        gap: var(--space-4) !important;
-    }
-    
-    .info-icon {
-        flex-shrink: 0 !important;
-        width: 60px !important;
-        height: 60px !important;
-        margin: 0 !important;
-        background: var(--secondary-color) !important;
-        border-radius: var(--radius-full) !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        color: var(--primary-color) !important;
-    }
-    
-    .info-card h3,
-    .info-card p,
-    .info-card .btn {
-        text-align: left !important;
-        margin-left: 0 !important;
-    }
+
     
     .contact-form {
         padding: var(--space-6);
@@ -4140,14 +4114,7 @@
         font-size: var(--text-xl);
     }
     
-    .info-card {
-        padding: var(--space-4);
-    }
-    
-    .info-icon {
-        width: 64px;
-        height: 64px;
-    }
+
     
     .contact-form {
         padding: var(--space-4);
