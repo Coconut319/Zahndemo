@@ -1515,6 +1515,31 @@ button {
         width: 100%;
     }
     
+    /* Hide scroll indicator on mobile to prevent overlapping */
+    .hero-scroll-indicator {
+        display: none;
+    }
+    
+    /* Center section titles on mobile */
+    .section-title {
+        text-align: center;
+    }
+    
+    /* Center service features list on mobile */
+    .service-features {
+        text-align: center;
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .service-features li {
+        text-align: center;
+        margin-bottom: var(--space-2);
+        padding: var(--space-2);
+        background: var(--neutral-50);
+        border-radius: var(--radius-lg);
+    }
+    
     .services-grid {
         grid-template-columns: 1fr;
         gap: var(--space-8);
